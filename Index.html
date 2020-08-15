@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice</title>
+</head>
+<body>
+  <div class="container"></div>
+    <h1>Pig Dice</h1>
+    <br>
+    <div class="row">
+      <h2>Player 2 Selection:</h2>
+    </div>  
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <div class="radio">
+          <label><input type="radio" name="player2" value="2" checked>Person</label>
+        </div>
+        <div class="radio"><label><input type="radio" name="player2" value="PC Easy">Computer (Easy Mode)</label>
+        </div>
+        <div class="radio"><label><input type="radio" name="player2" value="PC Hard">Computer (Harder Mode)</label>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row" style="text-align: center;">
+      <div class="col-md-4">
+        <h2>Player 1</h2>
+        <button type="submit" id="roll1"><u>Roll</button><button type="submit" id="hold1">Hold</u></button>
+      </div>
+    
+      <div class="col-md-4">
+        <h2>Player 2</h2>
+        <button type="submit" id="roll2"><u>Roll</button><button type="submit" id="hold2">Hold</u></button>
+      </div>
+    </div>
+   
+
+    <div class="row">
+      <div class="col-md-4">
+      <p>Player 1 rolls a : <span id="Player1Roll"></span></p>
+      <p>Rolls this turn: <span id="Player1CurrentTurn"></span></p>
+      <p>Total Held from previous turns: <span id="Player1TotalHeld"></span></p>
+      <p>Total if you hold now: <span id="Player1totalScore"></span></p>
+      </div>
+      <div class="col-md-4">
+        <p>Player 2 rolls a : <span id="Player2Roll"></span></p>
+        <p>Rolls this turn: <span id="Player2CurrentTurn"></span></p>
+        <p>Total Held from previous turns: <span id="Player2TotalHeld"></span></p>
+        <p>Total if you hold now: <span id="Player2totalScore"></span></p>
+      </div>
+
+    </div>
+
+   
+
+   
+</body>
+</html>
