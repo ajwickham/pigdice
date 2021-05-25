@@ -118,6 +118,10 @@ Player.prototype.hotButtons = function(own,other) {
 $(document).ready(function() {
   player2.identity = $("input:radio[name=player2]:checked").val(); 
       
+    $(".radio").on("click",function () {
+      player2.identity = $("input:radio[name=player2]:checked").val(); 
+    });
+  
     $("#roll1").click(function () {   
       player1.hotButtons(false,true);
       player1.playerRoll();
